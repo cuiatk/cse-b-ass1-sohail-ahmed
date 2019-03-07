@@ -137,7 +137,9 @@ public class TurtleSoup {
             {
                 drawRegularPolygon(turtle, 15, y);
             }
-           
+            drawRegularPolygon(turtle,4, 30);
+            turtle.forward(cornerLength);
+            turtle.turn(150.0 - calculateRegularPolygonAngle(corners));
         }
     }
 
